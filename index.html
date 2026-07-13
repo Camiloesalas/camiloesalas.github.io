@@ -111,12 +111,12 @@ nav.scrolled { padding: 0.9rem 4rem; }
 #hero {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 0.8fr;
   align-items: center;
   padding: 8rem 4rem 4rem;
   position: relative;
   overflow: hidden;
-  gap: 4rem;
+  gap: 2rem;
 }
 .hero-bg-lines {
   position: absolute; inset: 0; z-index: 0; pointer-events: none;
@@ -144,11 +144,11 @@ nav.scrolled { padding: 0.9rem 4rem; }
 .hero-name {
   font-family: "Syne", sans-serif;
   font-weight: 800;
-  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  font-size: clamp(3.2rem, 5.5vw, 5rem);
   line-height: 0.92;
   letter-spacing: -3px;
   margin-bottom: 1.5rem;
-  opacity: 0; transform: translateY(30px);
+  opacity: 0; transform: translateY(20px);
   animation: rise .8s .25s ease forwards;
 }
 .hero-name .first { color: var(--cream); display: block; }
@@ -610,9 +610,9 @@ footer {
     </h1>
     <p class="hero-role">Diseño lo que imagino, <br>construyo lo que diseño.</p>
     <p class="hero-desc">
-      Desarrollador con dominio frontend y backend, bases de datos,
-      análisis de sistemas y una mente orientada a soluciones.
-      Construyo productos digitales que funcionan, escalan y se ven increíbles.
+      Desarrollador Full Stack con experiencia real en productos móviles y APIs REST.
+      Autor de <strong style="color:var(--acid)">Flowly</strong> — app de lectura en React Native + NestJS.
+      Construyo software que funciona, escala y se ve increíble.
     </p>
     <div class="hero-ctas">
       <button class="btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">VER PROYECTOS →</button>
@@ -651,11 +651,11 @@ footer {
         <div class="about-num-lbl">AÑOS DE EXPERIENCIA</div>
       </div>
       <div class="about-num">
-        <div class="about-num-val" data-count="10">0</div>
+        <div class="about-num-val" data-count="12">0</div>
         <div class="about-num-lbl">PROYECTOS COMPLETADOS</div>
       </div>
       <div class="about-num">
-        <div class="about-num-val" data-count="8">0</div>
+        <div class="about-num-val" data-count="12">0</div>
         <div class="about-num-lbl">TECNOLOGÍAS DOMINADAS</div>
       </div>
     </div>
@@ -675,23 +675,23 @@ footer {
   <div class="skills-grid">
 
     <div class="skill-card reveal" data-index="01">
-      <span class="skill-icon">🌐</span>
-      <div class="skill-name">FRONTEND & BACKEND</div>
-      <p class="skill-desc">Desarrollo web completo: interfaces responsivas y lógica de servidor. HTML5, CSS3, JavaScript, PHP con arquitectura MVC y consumo de APIs REST.</p>
-      <div class="skill-bar-wrap"><div class="skill-bar" data-w="88"></div></div>
+      <span class="skill-icon">📱</span>
+      <div class="skill-name">DESARROLLO MÓVIL & WEB</div>
+      <p class="skill-desc">Construcción de aplicaciones móviles y plataformas web completas. Apps multiplataforma responsivas y backend estructurado con NestJS o PHP.</p>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-w="90"></div></div>
       <div class="skill-tags">
-        <span class="skill-tag">HTML5</span><span class="skill-tag">CSS3</span>
-        <span class="skill-tag">JavaScript</span><span class="skill-tag">PHP</span><span class="skill-tag">APIs REST</span>
+        <span class="skill-tag">React Native</span><span class="skill-tag">Expo</span>
+        <span class="skill-tag">NestJS</span><span class="skill-tag">TypeScript</span><span class="skill-tag">PHP</span>
       </div>
     </div>
 
     <div class="skill-card reveal" data-index="02">
       <span class="skill-icon">🗄️</span>
-      <div class="skill-name">BASES DE DATOS</div>
-      <p class="skill-desc">Diseño, modelado y administración de bases de datos relacionales. Queries optimizados, relaciones complejas, procedimientos y vistas.</p>
-      <div class="skill-bar-wrap"><div class="skill-bar" data-w="82"></div></div>
+      <div class="skill-name">BASES DE DATOS & BAAS</div>
+      <p class="skill-desc">Diseño, modelado y administración de bases de datos relacionales y plataformas Backend-as-a-Service para alta escalabilidad.</p>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-w="85"></div></div>
       <div class="skill-tags">
-        <span class="skill-tag">MySQL</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">SQL</span><span class="skill-tag">Modelado ER</span>
+        <span class="skill-tag">Supabase</span><span class="skill-tag">PostgreSQL</span><span class="skill-tag">MySQL</span><span class="skill-tag">SQL</span>
       </div>
     </div>
 
@@ -717,11 +717,11 @@ footer {
 
     <div class="skill-card reveal" data-index="05">
       <span class="skill-icon">🤖</span>
-      <div class="skill-name">IA & HERRAMIENTAS</div>
-      <p class="skill-desc">Uso estratégico de herramientas de inteligencia artificial para optimizar flujos de desarrollo, generar soluciones y potenciar la productividad.</p>
-      <div class="skill-bar-wrap"><div class="skill-bar" data-w="70"></div></div>
+      <div class="skill-name">IA & CLOUD DEPLOYMENT</div>
+      <p class="skill-desc">Integración de modelos de inteligencia artificial y despliegue continuo de APIs y bases de datos en servicios en la nube.</p>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-w="80"></div></div>
       <div class="skill-tags">
-        <span class="skill-tag">ChatGPT</span><span class="skill-tag">Claude AI</span><span class="skill-tag">Copilot</span><span class="skill-tag">Prompting</span>
+        <span class="skill-tag">OpenAI API</span><span class="skill-tag">Railway</span><span class="skill-tag">Git / GitHub</span><span class="skill-tag">Prompting</span>
       </div>
     </div>
 
@@ -751,6 +751,49 @@ footer {
   </div>
 
   <div class="projects-grid" id="projects-grid">
+    <!-- FLOWLY — FEATURED -->
+    <div class="project-card featured reveal" data-category="mobile backend">
+      <div class="project-img">
+        <div class="project-img-placeholder">📚</div>
+        <div class="project-img-overlay"></div>
+        <div style="position:absolute;bottom:1rem;left:1rem;right:1rem;background:rgba(10,10,8,0.85);border:1px solid var(--border-lit);padding:1rem;backdrop-filter:blur(8px);">
+          <div style="font-size:0.62rem;letter-spacing:2px;color:var(--acid);margin-bottom:.4rem;">STACK TÉCNICO</div>
+          <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
+            <span class="stack-item">REACT NATIVE</span>
+            <span class="stack-item">EXPO SDK 54</span>
+            <span class="stack-item">NESTJS</span>
+            <span class="stack-item">TYPESCRIPT</span>
+            <span class="stack-item">SUPABASE</span>
+            <span class="stack-item">POSTGRESQL</span>
+            <span class="stack-item">OPENAI API</span>
+            <span class="stack-item">RAILWAY</span>
+          </div>
+        </div>
+      </div>
+      <div class="project-body">
+        <div class="project-tags">
+          <span class="project-tag">MOBILE APP</span>
+          <span class="project-tag">FULL STACK</span>
+          <span class="project-tag">AI</span>
+          <span class="project-tag" style="background:rgba(255,140,66,0.15);border-color:rgba(255,140,66,0.4);color:var(--warm);">PROYECTO PROPIO</span>
+        </div>
+        <h3 class="project-title">Flowly — App de Lectura Inteligente</h3>
+        <p class="project-desc">Plataforma completa de lectura para móvil con recomendaciones por IA, sistema de retos, listas de lectura personalizadas, notificaciones push y modo offline. Arquitectura production-ready desplegada en Railway con Supabase como BaaS.</p>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:.8rem;margin-bottom:1.5rem;">
+          <div style="padding:.8rem;border:1px solid var(--border);background:var(--ink-dim);">
+            <div style="font-size:0.6rem;letter-spacing:2px;color:var(--muted);margin-bottom:.2rem;">MOBILE</div>
+            <div style="font-size:0.78rem;color:var(--cream);">React Native + Expo, navegación nativa, audio TTS, push notifications</div>
+          </div>
+          <div style="padding:.8rem;border:1px solid var(--border);background:var(--ink-dim);">
+            <div style="font-size:0.6rem;letter-spacing:2px;color:var(--muted);margin-bottom:.2rem;">BACKEND</div>
+            <div style="font-size:0.78rem;color:var(--cream);">NestJS REST API, JWT Auth, OpenAI, cron jobs, Swagger docs</div>
+          </div>
+        </div>
+        <div class="project-links">
+          <a class="project-link" href="https://github.com/Camiloesalas" target="_blank">VER EN GITHUB</a>
+        </div>
+      </div>
+    </div>
 
     <div class="project-card featured reveal" data-cat="fullstack">
       <div class="project-img">
@@ -780,38 +823,6 @@ footer {
       </div>
     </div>
 
-    <div class="project-card reveal" data-cat="frontend">
-      <div class="project-img" style="background:linear-gradient(135deg,#0f0f0d,#1a1a14);">
-        <div class="project-img-placeholder">🎨</div>
-        <div class="project-img-overlay"></div>
-      </div>
-      <div class="project-body">
-        <div class="project-tags"><span class="project-tag">FRONTEND</span><span class="project-tag">UI/UX</span></div>
-        <h3 class="project-title">Sistema de Diseño & Componentes UI</h3>
-        <p class="project-desc">Librería de componentes visuales reutilizables. Sistemas de grillas, paletas de color, tipografía escalable y patrones de interacción consistentes.</p>
-        <div class="project-stack"><span class="stack-item">HTML5</span><span class="stack-item">CSS3</span><span class="stack-item">JavaScript</span></div>
-        <div class="project-links">
-          <a class="project-link" href="https://github.com/Camiloesalas" target="_blank">VER REPOSITORIO</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card reveal" data-cat="backend">
-      <div class="project-img" style="background:linear-gradient(135deg,#0a0f0a,#0f1a10);">
-        <div class="project-img-placeholder">🗄️</div>
-        <div class="project-img-overlay"></div>
-      </div>
-      <div class="project-body">
-        <div class="project-tags"><span class="project-tag">BACKEND</span><span class="project-tag">BASE DE DATOS</span></div>
-        <h3 class="project-title">Gestión de Inventarios con BD Relacional</h3>
-        <p class="project-desc">Sistema CRUD completo con PHP y MySQL. Relaciones N:M, triggers, procedimientos almacenados y reportes dinámicos exportables.</p>
-        <div class="project-stack"><span class="stack-item">PHP</span><span class="stack-item">MySQL</span><span class="stack-item">SQL</span></div>
-        <div class="project-links">
-          <a class="project-link" href="https://github.com/Camiloesalas" target="_blank">VER REPOSITORIO</a>
-        </div>
-      </div>
-    </div>
-
   </div>
 </section>
 
@@ -823,6 +834,13 @@ footer {
     <div class="timeline-item">
       <div class="timeline-dot"></div>
       <div class="timeline-year">2026 — PRESENTE</div>
+      <div class="timeline-title">Flowly — Producto Full Stack Propio</div>
+      <div class="timeline-sub">React Native · NestJS · Supabase · OpenAI · Railway</div>
+      <p class="timeline-desc">Diseño, desarrollo y despliegue de una aplicación móvil completa de principio a fin. Mobile app con Expo SDK 54, backend REST con NestJS, autenticación JWT, recomendaciones por IA (OpenAI), notificaciones push, sistema de retos de lectura y modo offline. Arquitectura modular con PostgreSQL + Supabase desplegada en producción en Railway.</p>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-dot"></div>
+      <div class="timeline-year">2026</div>
       <div class="timeline-title">Desarrollo Full Stack Avanzado</div>
       <div class="timeline-sub">Formación universitaria — Proyecto UniEmpleo</div>
       <p class="timeline-desc">Construcción de plataforma web completa con PHP, MySQL y consumo de APIs. Primer proyecto de escala real con arquitectura MVC, autenticación segura y panel administrativo funcional.</p>
@@ -857,14 +875,17 @@ footer {
   <h2 class="contact-headline">¿Listo para<br><span>construir</span><br>juntos?</h2>
   <p class="contact-sub">Estoy disponible para oportunidades full-time, freelance o colaboraciones.</p>
   <div class="contact-links">
-    <a class="contact-link" href="mailto:camiloesalas08@gmail.com">
+    <a class="contact-link" href="javascript:void(0)" style="cursor: default;">
       <span class="cl-icon">✉️</span> camiloesalas08@gmail.com
     </a>
     <a class="contact-link" href="https://github.com/Camiloesalas" target="_blank">
       <span class="cl-icon">🐙</span> github.com/Camiloesalas
     </a>
-    <a class="contact-link" onclick="showToast('📋 Email copiado: camiloesalas08@gmail.com');navigator.clipboard.writeText('camiloesalas08@gmail.com')">
-      <span class="cl-icon">📋</span> COPIAR EMAIL
+    <a class="contact-link" href="https://www.linkedin.com/in/camilo-andr%C3%A9s-essalas-espejo" target="_blank">
+      <span class="cl-icon">💼</span> linkedin.com/in/camilo-essalas
+    </a>
+    <a class="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=camiloesalas08@gmail.com" target="_blank">
+      <span class="cl-icon">✉️</span> ESCRÍBEME
     </a>
   </div>
 </section>
